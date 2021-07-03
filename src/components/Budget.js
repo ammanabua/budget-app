@@ -1,10 +1,14 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import Naira from 'react-naira';
+import { AppContext } from '../context/AppContext';
+
 
 const Budget = () =>  {
+
+    const { budget } = useContext(AppContext);
     return (
         <div className='alert alert-secondary'>
-            <span>Budget: <Naira>100000</Naira></span>
+            <span>Budget: <Naira>{budget}</Naira></span>
         </div>
     )
 }
