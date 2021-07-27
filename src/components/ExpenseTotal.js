@@ -1,6 +1,8 @@
 import React from 'react';
 import Naira from 'react-naira';
 
+
+
 const ExpenseTotal = () => {
     return (
         <div className='alert alert-primary'>
